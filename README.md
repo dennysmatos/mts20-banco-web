@@ -6,7 +6,7 @@ Este é um projeto de aplicação web criado para fins educacionais, com o objet
 
 ## Dependências
 
-Este projeto depende da API REST disponível no repositório [Banco API](https://github.com/dennyscaetano/mts20t1-banco-api/).
+Este projeto depende da API REST disponível no repositório [Banco API](https://github.com/dennysmatos/mts20-banco-api/).
 
 # Banco Web
 
