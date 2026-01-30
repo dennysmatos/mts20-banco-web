@@ -1,4 +1,10 @@
 /node_modules
 package-lock.json
 .env
+<<<<<<< HEAD
 /mochawesome-report
+=======
+/mochawesome-report
+.DS_Store
+mts20t1-banco-web.textClipping
+>>>>>>> 9cfd032 (update files)

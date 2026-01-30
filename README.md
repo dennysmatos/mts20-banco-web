@@ -1,15 +1,27 @@
+# Banco Web
+
+## Descrição
+
+Este é um projeto de aplicação web criado para fins educacionais, com o objetivo de ensinar conceitos de teste de software. Ele consome uma API REST (Banco API) e oferece funcionalidades como login, transferências entre contas e listagem de transferências.
+
+## Dependências
+
+Este projeto depende da API REST disponível no repositório [Banco API](https://github.com/dennyscaetano/mts20t1-banco-api/).
 
 # Banco Web
 
 ## Descrição
+
 Este é um projeto de aplicação web criado para fins educacionais, com o objetivo de ensinar conceitos de teste de software. Ele consome uma API REST (Banco API) e oferece funcionalidades como login, transferências entre contas e listagem de transferências.
 
 ## Dependências
-Este projeto depende da API REST disponível no repositório [Banco API](https://github.com/dennyscaetano/mts20t1-banco-api/).
+
+Este projeto depende da API REST disponível no repositório [Banco API](https://github.com/dennysmatos/mts20-banco-api/).
 
 Antes de executar o `Banco Web`, certifique-se de que a API esteja configurada e rodando.
 
 ## Tecnologias Utilizadas
+
 - **Backend**: Node.js com Express
 - **Mock Server**: Mockoon
 - **Frontend**: HTML, CSS (Materialize CSS), e JavaScript
@@ -20,29 +32,34 @@ Antes de executar o `Banco Web`, certifique-se de que a API esteja configurada e
 ## Instalação e Configuração
 
 1. Clone este repositório:
+
    ```bash
-   git clone https://github.com/juliodelimas/banco-web.git
-   cd banco-web
+   git clone https://github.com/dennysmatos/mts20-banco-web.git
+   cd mts20-banco-web
    ```
 
 2. Instale as dependências:
-   ```bash
-   npm install
-   ```
+
+```bash
+npm install
+```
 
 3. Configure as variáveis de ambiente:
    Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+
    ```env
    API_BASE_URL=http://localhost:3000 # URL base da API REST Banco API ou do Mock Server
    PORT=4000                         # Porta em que o servidor será executado
    ```
 
 4. Execute o servidor:
+
    ```bash
    npm run server
    ```
 
 5. Execute o servidor de Mock (Opcional):
+
    ```bash
    npm run mock-server
    ```
@@ -55,12 +72,14 @@ Antes de executar o `Banco Web`, certifique-se de que a API esteja configurada e
 ## Funcionalidades
 
 ### Login
+
 - Permite autenticar um usuário através da API Banco.
 - Campos necessários:
   - **Usuário**
   - **Senha**
 
 ### Realizar Transferência
+
 - Permite realizar transferências entre contas.
 - Campos necessários:
   - **Conta Origem**
@@ -69,6 +88,7 @@ Antes de executar o `Banco Web`, certifique-se de que a API esteja configurada e
   - **Token** (apenas para valores superiores a R$ 5.000,00, use 123456 como valor fixo).
 
 ### Listagem de Transferências
+
 - Exibe transferências realizadas com paginação.
 - Controles:
   - **Página Anterior**
@@ -76,6 +96,7 @@ Antes de executar o `Banco Web`, certifique-se de que a API esteja configurada e
   - **Próxima Página**
 
 ### Consulta de Contas
+
 - Permite consultar contas cadastradas no sistema.
 
 ## Estrutura de Arquivos
@@ -101,6 +122,7 @@ Antes de executar o `Banco Web`, certifique-se de que a API esteja configurada e
 ## Melhorias Implementadas
 
 ### Código JavaScript
+
 Os arquivos JavaScript foram revisados e melhorados com base nas boas práticas de programação. Aqui estão algumas das melhorias realizadas:
 
 - **Tratamento de Erros:** Adicionado `try-catch` para gerenciar falhas nas requisições assíncronas.
@@ -111,7 +133,9 @@ Os arquivos JavaScript foram revisados e melhorados com base nas boas práticas 
 Os arquivos revisados estão disponíveis no diretório `public/js/`.
 
 ## Autor
+
 Desenvolvido por **Júlio de Lima** para treinamentos de teste de software.
 
 ## Licença
+
 Este projeto é licenciado sob a Licença ISC.
